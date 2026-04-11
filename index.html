@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Access Control </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form>
+        <h1>Subscription Access Control</h1>
+        
+        <label for="isPaid">Do you pay for a plan?</label>
+        <select name="isPaid" id="isPaid">
+            <option value= true >Yes</option>
+            <option value= false >No</option>
+        </select>
+
+        
+        <label for="plan">Which plan do you have?</label>
+        <input id="purchasePrice" type="string" placeholder="basic // premium">
+
+       
+        <button type="button" onclick="verifyAccess()">Pass</button>
+
+        <p id="accessLevel"></p>
+    </form>
+    
+    <script src="js/logic.js"></script>
+</body>
+</html>
+ 
