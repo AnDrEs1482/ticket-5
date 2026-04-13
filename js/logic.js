@@ -20,7 +20,7 @@
             throw Error("Invalid plan type. Please enter 'basic' or 'premium'.");
         }
     } catch (typeError) {
-        document.getElementById("accessLevel").textContent = "Invalid plan type. Please enter 'basic' or 'premium'.";
+        alert("Invalid plan type. Please enter 'basic' or 'premium'.");
        
     }
 }
